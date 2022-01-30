@@ -1,4 +1,5 @@
-# who-is-that-pokemon
+# Who is that Pokémon?
+Can you guess which Pokémon it is, based on its silhouette?
 
 ## Project setup
 ```
@@ -22,3 +23,9 @@ npm run test:unit
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+<br/>
+
+## Credits
+Fernando Herrera - [Vue de cero a experto](https://www.udemy.com/course/vuejs-fh/)
