@@ -2,7 +2,7 @@ import pokemonApi from '@/api/pokemonApi'
 
 
 // Creation of array of 650 (only 650 pokemon have svg in Pokemon API)
-const getAllPokemon = () => {
+export const getAllPokemon = () => {
     const pokemonArr = Array.from( Array(650) )
     return pokemonArr.map( ( _ , index) => index + 1 )
 }
@@ -18,7 +18,7 @@ const getPokemonOptions = async() => {
 
 
 // Obtaining of names of 4 pokemon
-const getPokemonNames = async( [a,b,c,d] = [] ) => {
+export const getPokemonNames = async( [a,b,c,d] = [] ) => {
 
     const promisesArray = [
         pokemonApi.get(`/${ a }`),
