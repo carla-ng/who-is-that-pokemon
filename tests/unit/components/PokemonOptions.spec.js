@@ -1,9 +1,11 @@
-import { shallowMount } from "@vue/test-utils";
-import PokemonOptions from "@/components/PokemonOptions";
-import { pokemons } from "../mocks/pokemon.mock";
+import { shallowMount } from "@vue/test-utils"
+import PokemonOptions from "@/components/PokemonOptions"
+import { pokemons } from "../mocks/pokemon.mock"
 
-describe('PokemonOptions Pokemon', () => {
-    let wrapper;
+
+describe('PokemonOptions Component', () => {
+
+    let wrapper
 
     beforeEach(() => {
         wrapper = shallowMount(PokemonOptions, {
@@ -13,6 +15,7 @@ describe('PokemonOptions Pokemon', () => {
         });
     });
 
+    
     test('Must match snapshot', () => {
     
         expect( wrapper.html() ).toMatchSnapshot();
@@ -30,7 +33,7 @@ describe('PokemonOptions Pokemon', () => {
         `);
         */
 
-    });
+    })
 
 
     test('Must show the 4 options correctly', () => {

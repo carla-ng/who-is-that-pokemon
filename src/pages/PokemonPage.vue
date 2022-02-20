@@ -57,7 +57,7 @@ export default {
             if (selectedId == this.pokemon.id ) {
                 this.message = `Right answer! :) It's ${ this.pokemon.name }`
             } else {
-                this.message = `Oops! Wrongs answer :( It's ${ this.pokemon.name }`
+                this.message = `Oops! Wrong answer :( It's ${ this.pokemon.name }`
             }
         },
         newGame() {
