@@ -5,7 +5,7 @@
                 :key="pokemon.id"
                 @click="$emit( 'pokemonSelection', pokemon.id )"
             >
-                {{ pokemon.name }}
+                <span>{{ pokemon.name }}</span>
             </li>
         </ul>
     </div>
@@ -18,11 +18,6 @@ export default {
             type: Array,
             required: true
         }
-    },
-    methods: {
-        test() {
-            //this.$emit()
-        }
     }
 }
 </script>
@@ -30,20 +25,32 @@ export default {
 <style scoped>
     ul {
         list-style-type: none;
-        margin: 35px 0 0 0;
+        margin: 50px 0 0 0;
         padding: 0;
     }
     li {
         background-color: white;
         border-radius: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: 2px solid #000;
         cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 2px;
         margin-bottom: 10px;
-        width: 250px;
+        width: 300px;
+        padding: 2px;
     }
 
     li:hover {
         background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    span {
+        border: 2px solid #000;
+        color: #000;
+        display: block;
+        font-family: Verdana, Geneva, sans-serif; 
+        padding: 16px;
+        text-transform: capitalize
     }
 
     .options-container {
