@@ -1,6 +1,14 @@
 # Who is that Pokémon?
 Can you guess which Pokémon it is, based on its silhouette?
 
+<br/>
+
+## Demo
+https://carla-ng.github.io/who-is-that-pokemon/
+
+
+<br/>
+
 ## Project setup
 ```
 npm install
